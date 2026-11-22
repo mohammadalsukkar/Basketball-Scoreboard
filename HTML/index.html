@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <!-- basic meta -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basketball Scoreboard</title>
+
+    <!-- SEO -->
+    <meta name="description" content="Basketball Scoreboard that score the result for each team">
+    <meta name="keywords" content="basketball,basketball scoreboard, basketball players, basketball teams">
+    <meta name="author" content="Mohammad Al Sukkar">
+
+    <!-- open graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Basketball Scoreboard">
+    <meta property="og:description" content="Basketball Scoreboard that score the result for each team">
+    <meta property="og:image" content="https://basketball-scoreboard.com/https://coloradotime.com/hubfs/Products/bk1300web.jpg">
+    <meta property="og:url" content="https://basketball-scoreboard.com">
+
+    <!-- favicon -->
+    <link rel="icon" type="image/jpg" href="https://coloradotime.com/hubfs/Products/bk1300web.jpg">
+
+    <!-- styles -->
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+    <header></header>
+    <main>
+        <diV class="score-container">
+            <div class="team">
+                <h2 class="title-text">HOME</h2>
+                <div class="score">
+                    <span class="points home-points">0</span>
+                </div>
+                <div class="buttons-container">
+                    <button onclick="add1home()">+1</button>
+                    <button onclick="add2home()">+2</button>
+                    <button onclick="add3home()">+3</button>
+                </div>
+                <div class="fouls-container">
+                    <h3 class="fouls-title">FOULS</h3>
+                    <div class="fouls-background">
+                        <span class="fouls-counter fouls-home">0</span>
+                    </div>
+                    <div class="foul-button-background">
+                        <button class="foul-button" onclick="foulHome()">FOUL</button>
+                    </div>
+                </div>
+            </div>
+            <div class="timer-period-container">
+                <div class="timer-container">
+                    <span class="timer">00:00</span>
+                </div>
+                <div class="period-container">
+                    <span class="period-title">PERIOD</span>
+                    <div class="period-background">
+                        <span class="period-counter">0</span>
+                    </div>
+                </div>
+                <div class="period-button-background">
+                    <button class="period-button" onclick="period()">PERIOD</button>
+                </div>
+            </div>
+            <div class="team">
+                <h2 class="title-text">GUEST</h2>
+                <div class="score">
+                    <span class="points guest-points">0</span>
+                </div>
+                <div class="buttons-container">
+                    <button onclick="add1guest()">+1</button>
+                    <button onclick="add2guest()">+2</button>
+                    <button onclick="add3guest()">+3</button>
+                </div>
+                <div class="fouls-container">
+                    <h3 class="fouls-title">FOULS</h3>
+                    <div class="fouls-background">
+                        <span class="fouls-counter fouls-guest">0</span>
+                    </div>
+                    <div class="foul-button-background">
+                        <button class="foul-button" onclick="foulGuest()">FOUL</button>
+                    </div>
+                </div>
+            </div>
+        </diV>
+        <div class="start-end-game-button-container">
+            <button class="start-game-button" onclick="startGame()">Start Game</button>
+            <button class="end-game-button" onclick="endGame()">End Game</button>
+        </div>
+        <div class="new-game-container">
+            <button class="new-game" onclick="newGame()">New Game</button>
+        </div>
+    </main>
+    <footer></footer>
+    <script src="../js/index.js"></script>
+</body>
+</html>
